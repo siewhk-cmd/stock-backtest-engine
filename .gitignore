@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+myenv/
+
+# Local Streamlit secrets
+.streamlit/secrets.toml
+
+# Temporary runtime backtest output
+.runtime/
+backtest_results/
+strategies/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# IMPORTANT:
+# Do NOT ignore market_data/prices if you want Streamlit Cloud to receive
+# the Parquet files directly from this GitHub repository.

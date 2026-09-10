@@ -1,0 +1,46 @@
+STREAMLIT CLOUD DEPLOYMENT CHECKLIST
+====================================
+
+1. Extract this package.
+
+2. Copy 5-10 test Parquet files into:
+       market_data/prices/
+
+3. Local test:
+       pip install -r requirements.txt
+       streamlit run app.py
+
+4. Confirm:
+       - tickers appear
+       - a backtest can run
+       - results display
+       - result ZIP downloads
+
+5. Create/open GitHub repository.
+
+6. Push the entire folder to GitHub.
+
+7. Sign in to Streamlit Community Cloud with GitHub.
+
+8. Create app:
+       Repository: your repository
+       Branch: main
+       Main file: app.py
+
+9. Deploy.
+
+10. Test the online app with a few tickers.
+
+11. Only after it works, add all 500+ Parquet files and push again.
+
+IMPORTANT
+---------
+The app no longer depends on /home/siew/... paths.
+
+Cloud data path:
+    market_data/prices/
+
+Cloud result storage is temporary.
+Always download important result ZIP/CSV files after running.
+
+Do not commit passwords or API keys to GitHub.
